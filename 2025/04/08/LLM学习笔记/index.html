@@ -6,16 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://ccsoeasy.gitee.io">
-  <title>Archives: 2021/2 | 杨镜福的博客</title>
+  <title>LLM学习笔记 | 杨镜福的博客</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta property="og:type" content="website">
-<meta property="og:title" content="杨镜福的博客">
-<meta property="og:url" content="http://ccsoeasy.gitee.io/archives/2021/02/index.html">
+  <meta name="description" content="摘要LoRA微调、">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LLM学习笔记">
+<meta property="og:url" content="http://ccsoeasy.gitee.io/2025/04/08/LLM%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="杨镜福的博客">
+<meta property="og:description" content="摘要LoRA微调、">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-04-08T13:54:59.000Z">
+<meta property="article:modified_time" content="2025-04-08T14:33:37.829Z">
 <meta property="article:author" content="杨镜福">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="LLM">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="杨镜福的博客" type="application/atom+xml">
@@ -207,249 +213,278 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-LLM学习笔记" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
   
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2021/02/23/%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88Seata%E5%BF%AB%E9%80%9F%E4%BD%BF%E7%94%A8/" class="archive-article-date">
-        <time datetime="2021-02-23T03:17:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-02-23</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2021/02/23/%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88Seata%E5%BF%AB%E9%80%9F%E4%BD%BF%E7%94%A8/">分布式事务解决方案Seata快速使用</a>
-	
+    <h1 class="article-title" itemprop="name">
+      LLM学习笔记
     </h1>
   
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">JAVA</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">微服务</a>
-        		</li>
-      		
-		</ul>
-	</div>
+  
+  
+        
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
 
-          
+<a href="/2025/04/08/LLM%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="archive-article-date">
+        <time datetime="2025-04-08T13:54:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2025-04-08</time>
+</a>
 
+  
+  
+    
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">3.5k字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">20分</span>
+    </span>
+  </span>
+</div>
+
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h1 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h1><p>LoRA微调、</p>
+<a id="more"></a>
+
+<h1 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h1><h2 id="下载数据集"><a href="#下载数据集" class="headerlink" title="下载数据集"></a>下载数据集</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export HF_ENDPOINT=http://hf-mirror.com  # 镜像网站</span><br><span class="line">huggingface-cli download --repo-type dataset --resume-download FreedomIntelligence/medical-o1-reasoning-SFT --local-dir ./FreedomIntelligence/medical-o1-reasoning-SFT --local-dir-use-symlinks False</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h1><p>重点关注数据集的格式，如何转换为当前模型需要的格式</p>
+<p>merge_and_unload()：h=Wx+BAx  ==&gt;  h=(W+BA)x, W_new=W+BA</p>
+<h2 id="基本微调"><a href="#基本微调" class="headerlink" title="基本微调"></a>基本微调</h2><p>SFT.py</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> transformers <span class="keyword">import</span> pipeline</span><br><span class="line"><span class="keyword">from</span> peft <span class="keyword">import</span> AutoPeftModelForCausalLM</span><br><span class="line"><span class="keyword">from</span> trl <span class="keyword">import</span> SFTTrainer</span><br><span class="line"><span class="keyword">from</span> transformers <span class="keyword">import</span> TrainingArguments</span><br><span class="line"><span class="keyword">from</span> peft <span class="keyword">import</span> LoraConfig, prepare_model_for_kbit_training, get_peft_model</span><br><span class="line"><span class="keyword">from</span> transformers <span class="keyword">import</span> AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig</span><br><span class="line"><span class="keyword">from</span> transformers <span class="keyword">import</span> AutoTokenizer</span><br><span class="line"><span class="keyword">from</span> datasets <span class="keyword">import</span> load_dataset</span><br><span class="line"><span class="keyword">import</span> os </span><br><span class="line">os.environ[<span class="string">&quot;CUDA_VISIBLE_DEVICES&quot;</span>]=<span class="string">&quot;0&quot;</span></span><br><span class="line"><span class="comment"># from modelscope.msdatasets import MsDataset</span></span><br><span class="line"><span class="comment"># ds =  MsDataset.load(&#x27;market.aliyun/LST001_CN&#x27;)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Load a tokenizer to use its chat template</span></span><br><span class="line">template_tokenizer = AutoTokenizer.from_pretrained(</span><br><span class="line">    <span class="string">&quot;TinyLlama/TinyLlama-1.1B-Chat-v1.0&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">format_prompt2</span>(<span class="params">example</span>):</span></span><br><span class="line">    <span class="comment"># chat = example[&quot;messages&quot;]</span></span><br><span class="line">    chat=[</span><br><span class="line">      &#123;<span class="string">&quot;role&quot;</span>: <span class="string">&quot;user&quot;</span>, <span class="string">&quot;content&quot;</span>: <span class="string">f&#x27;<span class="subst">&#123;example[<span class="string">&quot;instruction&quot;</span>]&#125;</span> <span class="subst">&#123;example[<span class="string">&quot;input&quot;</span>]&#125;</span>&#x27;</span>&#125;,</span><br><span class="line">      &#123;<span class="string">&quot;role&quot;</span>: <span class="string">&quot;assistant&quot;</span>, <span class="string">&quot;content&quot;</span>: example[<span class="string">&quot;output&quot;</span>]&#125;</span><br><span class="line">    ]</span><br><span class="line">    prompt = template_tokenizer.apply_chat_template(chat, tokenize=<span class="literal">False</span>)</span><br><span class="line">    <span class="keyword">return</span> &#123;<span class="string">&quot;text&quot;</span>: prompt&#125;</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">format_prompt</span>(<span class="params">example</span>):</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;Format the prompt to using the &lt;|user|&gt; template TinyLLama is using&quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># Format answers</span></span><br><span class="line"></span><br><span class="line">    chat = example[<span class="string">&quot;messages&quot;</span>]</span><br><span class="line">    <span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">    chat</span></span><br><span class="line"><span class="string">    [&#123;&#x27;content&#x27;: &#x27;Write a compelling m...oose ends.&#x27;, &#x27;role&#x27;: &#x27;user&#x27;&#125;, &#123;&#x27;content&#x27;: &#x27;Detective Jameson ha...al murder.&#x27;, &#x27;role&#x27;: &#x27;assistant&#x27;&#125;, &#123;&#x27;content&#x27;: &#x27;Wow, that was a grea...the story.&#x27;, &#x27;role&#x27;: &#x27;user&#x27;&#125;, &#123;&#x27;content&#x27;: &#x27;Of course! As Detect...he killer.&#x27;, &#x27;role&#x27;: &#x27;assistant&#x27;&#125;, &#123;&#x27;content&#x27;: &#x27;That was an amazing ...s wine.&quot;, &#x27;role&#x27;: &#x27;user&#x27;&#125;, &#123;&#x27;content&#x27;: &#x27;Yes, the vineyard gr...winemaker.&#x27;, &#x27;role&#x27;: &#x27;assistant&#x27;&#125;]</span></span><br><span class="line"><span class="string">    special variables:</span></span><br><span class="line"><span class="string">    function variables:</span></span><br><span class="line"><span class="string">    0: &#123;&#x27;content&#x27;: &#x27;Write a compelling m...oose ends.&#x27;, &#x27;role&#x27;: &#x27;user&#x27;&#125;</span></span><br><span class="line"><span class="string">    1: &#123;&#x27;content&#x27;: &#x27;Detective Jameson ha...al murder.&#x27;, &#x27;role&#x27;: &#x27;assistant&#x27;&#125;</span></span><br><span class="line"><span class="string">    2: &#123;&#x27;content&#x27;: &#x27;Wow, that was a grea...the story.&#x27;, &#x27;role&#x27;: &#x27;user&#x27;&#125;</span></span><br><span class="line"><span class="string">    3: &#123;&#x27;content&#x27;: &#x27;Of course! As Detect...he killer.&#x27;, &#x27;role&#x27;: &#x27;assistant&#x27;&#125;</span></span><br><span class="line"><span class="string">    4: &#123;&#x27;content&#x27;: &#x27;That was an amazing ...s wine.&quot;, &#x27;role&#x27;: &#x27;user&#x27;&#125;</span></span><br><span class="line"><span class="string">    5: &#123;&#x27;content&#x27;: &#x27;Yes, the vineyard gr...winemaker.&#x27;, &#x27;role&#x27;: &#x27;assistant&#x27;&#125;</span></span><br><span class="line"><span class="string">    len(): 6</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    &#x27;&#x27;&#x27;</span></span><br><span class="line">    prompt = template_tokenizer.apply_chat_template(chat, tokenize=<span class="literal">False</span>)</span><br><span class="line">    <span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">    &quot;&lt;|user|&gt;\nWrite a compelling mystery story set in a vineyard, where a seasoned detective investigates a murder with twists and turns that will keep the reader engaged until the very end. Add complex characters, multiple suspects, and red herrings to create suspense and challenge the detective&#x27;s deductive reasoning. Use vivid descriptive language to paint a picture of the vineyard setting, its wine-making process, and the people who live and work there. Make sure to reveal clues and motives gradually, and create a satisfying resolution that ties up all loose ends.&lt;/s&gt;\n&lt;|assistant|&gt;\nDetective Jameson had been called to the vineyard on the outskirts of town to investigate a murder. The sun was setting, casting long shadows over the grape vines, and the air was heavy with the sweet scent of fermented grapes. The body was lying in the middle of the vineyard, surrounded by broken grape vines and a scattering of grapes. The victim&#x27;s throat had been slashed, and there were bruises around the neck.\n\nAs Jameson began his investigation, he met the owner of the vineyard, a tall, thin man with a stern face. The owner didn&#x27;t seem overly concerned about the murder on his property and was reluctant to answer any questions that Jameson had. He was also dismissive of the other workers, including the winemaker, who appeared visibly distraught.\n\nJameson soon discovered that the victim, a young woman named Sophia, had been working at the vineyard for the past year. Sophia was well-liked by the other workers, who had nothing but positive things to say about her. She was hardworking and always had a smile on her face. As Jameson dug deeper, he found that Sophia had possibly been having an affair with the owner, who was married. The owner denied any involvement, but Jameson was suspicious, especially when he found a note in Sophia&#x27;s pocket that hinted at a secret relationship.\n\nFurther investigation uncovered more potential suspects—a worker who had been fired earlier that day, a jealous ex-boyfriend, and even a rival vineyard owner. With so many suspects, Jameson had to be careful, and he wasn&#x27;t sure who he could trust. The winemaker, who had initially seemed distraught, also didn&#x27;t seem to be telling Jameson everything he knew.\n\nAs Jameson pieced together the clues, he found that the murder had been premeditated. The killer had used the grape vines to hide their tracks, and the bruises on Sophia&#x27;s neck indicated she had been strangled before her throat was slashed. Jameson knew he was getting closer to solving the case, and he sensed the killer was getting nervous.\n\nThe final twist came when the winemaker confessed to the murder. He had been in love with Sophia and had become jealous when he discovered she had been seeing the owner. He had planned the murder carefully, knowing that Sophia had been working alone that day. Jameson arrested the winemaker, relieved that he had solved the case and that justice would be served.\n\nAs the sun rose over the vineyard the next day, the workers returned to their routine of harvesting grapes, but Jameson knew that the tranquility of the vineyard had been shattered by a brutal murder.&lt;/s&gt;\n&lt;|user|&gt;\nWow, that was a great mystery story! I really enjoyed the twists and turns, and the characters were interesting. Can you give me more detailed descriptions of the vineyard setting and the wine-making process? I want to be fully immersed in the story.&lt;/s&gt;\n&lt;|assistant|&gt;\nOf course! As Detective Jameson arrived at the vineyard, he was struck by the natural beauty of the surroundings. The rolling hills were covered in rows upon rows of grapevines, their leaves rustling gently in the breeze. The vineyard was divided into different sections, each one dedicated to a specific type of grape. Jameson could see the giant barrels inside the winery, where the grapes would be crushed, fermented, and aged until they became a fine wine.\n\nThe grapes themselves were a sight to behold—some were deep burgundy, others were a bright green, and some were shades in between. As Jameson walked through the vineyard, he could smell the sweet aroma of grapes hanging heavily from the vines. He saw workers picking the grapes carefully, placing them in baskets and moving them to the winery for processing. The winery itself was a sprawling building with large metal tanks, wooden barrels, and machinery scattered throughout the space.\n\nJameson had always been fascinated by the art of winemaking. He knew it was a delicate process that required patience, knowledge, and skill. It was a precise balance of science and art—the grapes had to be harvested at the right time, crushed in the right way, and aged properly to produce the perfect wine. As he learned more about the wine-making process, Jameson became convinced that the careful attention to detail could uncover critical clues to solve the murder mystery.\n\nThroughout his investigation, Jameson noticed other aspects of the vineyard that added to its charm—the sprawling estate with its mustard yellow stucco walls, the vintage bicycles parked near the winery, the creaky wooden tasting room, and the buzzing of bees that drifted through the vineyards.\n\nAll these sights and smells contributed to the peaceful setting of the vineyard, making it even more shocking when Jameson stumbled upon a gruesome murder. The picturesque vineyard was now a crime scene, and Jameson knew that he had his work cut out for him to catch the killer.&lt;/s&gt;\n&lt;|user|&gt;\nThat was an amazing description! It really transported me into the vineyard with Detective Jameson. Can you tell me more about the different types of grapes that were grown in the vineyard? I&#x27;m curious to know which ones were used to create the murder victim&#x27;s wine.&lt;/s&gt;\n&lt;|assistant|&gt;\nYes, the vineyard grew various types of grapes, each with its unique flavor profile and characteristics. The vineyard had vines of red grapes, such as Pinot Noir, Cabernet Franc, Cabernet Sauvignon, and Merlot. These grapes added depth, structure, and complexity to the wine, and were often blended to create different red wine blends.\n\nThe vineyard also had vines of white grapes, such as Chardonnay, Sauvignon Blanc, and Viognier. These grapes were used to produce white wine, which was light, refreshing, and crisp. Viognier, in particular, was known to be used to create a small batch, highly sought-after white wine from the vineyard.\n\nSophia, the victim, was known to have been a specialist in selecting the perfect blend of grapes for each bottle of wine. She had a unique talent for detecting the subtle flavors and nuances of each grape and was often tasked with creating the vineyard&#x27;s signature wines.\n\nWhen Detective Jameson examined the grape vines around the scene of the crime, he noticed that some of the vines had been uprooted and damaged. He also saw that the grapes in the area were Merlot grapes, which were used to create the vineyard&#x27;s award-winning red wine.\n\nAs Jameson dove deeper into the investigation, he uncovered a plot to sabotage the Merlot grapes. Someone had deliberately damaged the vines, destroying the grapes&#x27; flavor and texture, and ultimately ruining the wine. Sophia had been investigating the sabotage, and that could have led to her murder.\n\nDetective Jameson quickly realized that the Merlot grapes were a crucial clue in the murder investigation. He interviewed every worker present at the vineyard, looked through the vineyard&#x27;s production logs, and analyzed samples of each grape variety to identify potential suspects. The hunt for the killer led Jameson on a roller-coaster ride of clues and red herrings, and ultimately to the arrest of the winemaker.&lt;/s&gt;\n&quot;</span></span><br><span class="line"><span class="string">    &#x27;&#x27;&#x27;</span></span><br><span class="line">    <span class="keyword">return</span> &#123;<span class="string">&quot;text&quot;</span>: prompt&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># Load and format the data using the template TinyLLama is using</span></span><br><span class="line">dataset = (</span><br><span class="line">    load_dataset(<span class="string">&quot;kurehamnm/Chinese_Question_Answering_Dataset&quot;</span>,  split=<span class="string">&quot;train&quot;</span>)</span><br><span class="line">    <span class="comment"># load_dataset(&quot;HuggingFaceH4/ultrachat_200k&quot;,  split=&quot;test_sft&quot;)</span></span><br><span class="line">    .shuffle(seed=<span class="number">42</span>)</span><br><span class="line">    .select(<span class="built_in">range</span>(<span class="number">300</span>_000))</span><br><span class="line">)</span><br><span class="line">dataset = dataset.<span class="built_in">map</span>(format_prompt2)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">model_name = <span class="string">&quot;Qwen/Qwen2.5-0.5B-Instruct&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 4-bit quantization configuration - Q in QLoRA</span></span><br><span class="line">bnb_config = BitsAndBytesConfig(</span><br><span class="line">    load_in_4bit=<span class="literal">True</span>,  <span class="comment"># Use 4-bit precision model loading</span></span><br><span class="line">    bnb_4bit_quant_type=<span class="string">&quot;nf4&quot;</span>,  <span class="comment"># Quantization type</span></span><br><span class="line">    bnb_4bit_compute_dtype=<span class="string">&quot;float16&quot;</span>,  <span class="comment"># Compute dtype</span></span><br><span class="line">    bnb_4bit_use_double_quant=<span class="literal">True</span>,  <span class="comment"># Apply nested quantization</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Load the model to train on the GPU</span></span><br><span class="line">model = AutoModelForCausalLM.from_pretrained(</span><br><span class="line">    model_name,</span><br><span class="line">    device_map=<span class="string">&quot;auto&quot;</span>,</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Leave this out for regular SFT</span></span><br><span class="line">    quantization_config=bnb_config,</span><br><span class="line">)</span><br><span class="line">model.config.use_cache = <span class="literal">False</span></span><br><span class="line">model.config.pretraining_tp = <span class="number">1</span>  <span class="comment"># 上面这两个配置，只有在 k-bit 量化的时候需要设置</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Load LLaMA tokenizer</span></span><br><span class="line">tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=<span class="literal">True</span>)</span><br><span class="line"><span class="comment"># tokenizer.pad_token = &quot;&lt;PAD&gt;&quot;  # qwen2 的 pad token 不是 &lt;pad&gt;，所以用 &lt;im_end&gt;，因此需要注释掉</span></span><br><span class="line">tokenizer.padding_side = <span class="string">&quot;left&quot;</span>   <span class="comment"># 训练不重要，推理比较重要</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># Prepare LoRA Configuration</span></span><br><span class="line">peft_config = LoraConfig(</span><br><span class="line">    lora_alpha=<span class="number">32</span>,  <span class="comment"># LoRA Scaling</span></span><br><span class="line">    lora_dropout=<span class="number">0.1</span>,  <span class="comment"># Dropout for LoRA Layers</span></span><br><span class="line">    r=<span class="number">64</span>,  <span class="comment"># Rank，可训练数据越多，设置越大</span></span><br><span class="line">    bias=<span class="string">&quot;none&quot;</span>,</span><br><span class="line">    task_type=<span class="string">&quot;CAUSAL_LM&quot;</span>,</span><br><span class="line">    target_modules=[<span class="string">&#x27;k_proj&#x27;</span>, <span class="string">&#x27;v_proj&#x27;</span>, <span class="string">&#x27;q_proj&#x27;</span>]</span><br><span class="line">    <span class="comment"># Layers to target</span></span><br><span class="line">    <span class="comment">#  [&#x27;k_proj&#x27;, &#x27;gate_proj&#x27;, &#x27;v_proj&#x27;, &#x27;up_proj&#x27;, &#x27;q_proj&#x27;, &#x27;o_proj&#x27;, &#x27;down_proj&#x27;]</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment"># prepare model for training</span></span><br><span class="line">model = prepare_model_for_kbit_training(model)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 如果没有 prepare_model_for_kbit_training，</span></span><br><span class="line"><span class="comment"># 且 training args 中配置了 gradient_checkpointing=True （这个其实也是为了省显存，其实不重要）</span></span><br><span class="line"><span class="comment"># 那么需要设置 model.enable_input_require_grads()</span></span><br><span class="line"><span class="comment"># model.enable_input_require_grads()</span></span><br><span class="line"></span><br><span class="line">model = get_peft_model(model, peft_config)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">output_dir = <span class="string">&quot;./results&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Training arguments</span></span><br><span class="line">training_arguments = TrainingArguments(</span><br><span class="line">    output_dir=output_dir,</span><br><span class="line">    per_device_train_batch_size=<span class="number">2</span>,</span><br><span class="line">    gradient_accumulation_steps=<span class="number">4</span>,</span><br><span class="line">    optim=<span class="string">&quot;adamw_torch&quot;</span>,</span><br><span class="line">    learning_rate=<span class="number">2e-4</span>,</span><br><span class="line">    lr_scheduler_type=<span class="string">&quot;cosine&quot;</span>,</span><br><span class="line">    num_train_epochs=<span class="number">1</span>,</span><br><span class="line">    logging_steps=<span class="number">10</span>,</span><br><span class="line">    fp16=<span class="literal">True</span>,</span><br><span class="line">    gradient_checkpointing=<span class="literal">True</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># Set supervised fine-tuning parameters</span></span><br><span class="line">trainer = SFTTrainer(</span><br><span class="line">    model=model,</span><br><span class="line">    train_dataset=dataset,</span><br><span class="line">    dataset_text_field=<span class="string">&quot;text&quot;</span>,   <span class="comment"># 注意 dataset 中的 text 字段</span></span><br><span class="line">    tokenizer=tokenizer,</span><br><span class="line">    args=training_arguments,</span><br><span class="line">    max_seq_length=<span class="number">512</span>,</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Leave this out for regular SFT</span></span><br><span class="line">    peft_config=peft_config,</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Train model</span></span><br><span class="line">trainer.train()</span><br><span class="line"></span><br><span class="line"><span class="comment"># Save QLoRA weights</span></span><br><span class="line">trainer.model.save_pretrained(<span class="string">&quot;qwen2.5-0.5b-instruct-chaofa&quot;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">model = AutoPeftModelForCausalLM.from_pretrained(</span><br><span class="line">    <span class="string">&quot;qwen2.5-0.5b-instruct-chaofa&quot;</span>,</span><br><span class="line">    low_cpu_mem_usage=<span class="literal">True</span>,</span><br><span class="line">    device_map=<span class="string">&quot;auto&quot;</span>,</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Merge LoRA and base model</span></span><br><span class="line">merged_model = model.merge_and_unload()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">pipe = pipeline(task=<span class="string">&quot;text-generation&quot;</span>,</span><br><span class="line">                model=merged_model, tokenizer=tokenizer)</span><br><span class="line"></span><br><span class="line">prompt_example = <span class="string">&quot;&quot;&quot;&lt;|im_start|&gt;system</span></span><br><span class="line"><span class="string">你是一个非常棒的人工智能助手，是UP主 “用代码打点酱油的chaofa” 开发的。&lt;|im_end|&gt;</span></span><br><span class="line"><span class="string">&lt;|im_start|&gt;user</span></span><br><span class="line"><span class="string">天气太热了，所以我今天没有学习一点。</span></span><br><span class="line"><span class="string">翻译成文言文：&lt;|im_end|&gt;</span></span><br><span class="line"><span class="string">&lt;|im_start|&gt;assistant</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line">print(pipe(prompt_example, max_new_tokens=<span class="number">50</span>)[<span class="number">0</span>][<span class="string">&quot;generated_text&quot;</span>])</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="基本推理"><a href="#基本推理" class="headerlink" title="基本推理"></a>基本推理</h2><p>Infer.py</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> transformers <span class="keyword">import</span> AutoTokenizer</span><br><span class="line"><span class="keyword">from</span> datasets <span class="keyword">import</span> load_dataset</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> transformers <span class="keyword">import</span> AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig</span><br><span class="line"></span><br><span class="line">model_name = <span class="string">&quot;Qwen/Qwen2.5-0.5B-Instruct&quot;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># Load LLaMA tokenizer</span></span><br><span class="line">tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=<span class="literal">True</span>)</span><br><span class="line"><span class="comment"># tokenizer.pad_token = &quot;&lt;PAD&gt;&quot;  # qwen2 的 pad token 不是 &lt;pad&gt;，所以用 &lt;im_end&gt;，因此需要注释掉</span></span><br><span class="line">tokenizer.padding_side = <span class="string">&quot;left&quot;</span>   <span class="comment"># 训练不重要，推理比较重要</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> peft <span class="keyword">import</span> AutoPeftModelForCausalLM</span><br><span class="line"></span><br><span class="line">model = AutoPeftModelForCausalLM.from_pretrained(</span><br><span class="line">    <span class="string">&quot;qwen2.5-0.5b-instruct-chaofa&quot;</span>,</span><br><span class="line">    low_cpu_mem_usage=<span class="literal">True</span>,</span><br><span class="line">    device_map=<span class="string">&quot;auto&quot;</span>,</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Merge LoRA and base model</span></span><br><span class="line">merged_model = model.merge_and_unload()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> transformers <span class="keyword">import</span> pipeline</span><br><span class="line"></span><br><span class="line">pipe = pipeline(task=<span class="string">&quot;text-generation&quot;</span>, model=merged_model, tokenizer=tokenizer)</span><br><span class="line"></span><br><span class="line"><span class="comment"># prompt_example = &quot;&quot;&quot;&lt;|im_start|&gt;system</span></span><br><span class="line"><span class="comment"># 你是一个非常棒的人工智能助手。&lt;|im_end|&gt;</span></span><br><span class="line"><span class="comment"># &lt;|im_start|&gt;user</span></span><br><span class="line"><span class="comment"># 怎么说服男朋友买烤箱&lt;|im_end|&gt;</span></span><br><span class="line"><span class="comment"># &lt;|im_start|&gt;assistant</span></span><br><span class="line"><span class="comment"># &quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line">prompt_example = <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">&lt;|im_start|&gt;user</span></span><br><span class="line"><span class="string">如何评价联想这家公司&lt;|im_end|&gt;</span></span><br><span class="line"><span class="string">&lt;|im_start|&gt;assistant</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line">print(pipe(prompt_example, max_new_tokens=<span class="number">5000</span>)[<span class="number">0</span>][<span class="string">&quot;generated_text&quot;</span>])</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="微调成reasoning模型"><a href="#微调成reasoning模型" class="headerlink" title="微调成reasoning模型"></a>微调成reasoning模型</h2><p>SFT_medical_o1_sft_Chinese_2.py</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> transformers <span class="keyword">import</span> pipeline</span><br><span class="line"><span class="keyword">from</span> peft <span class="keyword">import</span> AutoPeftModelForCausalLM</span><br><span class="line"><span class="keyword">from</span> trl <span class="keyword">import</span> SFTTrainer</span><br><span class="line"><span class="keyword">from</span> transformers <span class="keyword">import</span> TrainingArguments</span><br><span class="line"><span class="keyword">from</span> peft <span class="keyword">import</span> LoraConfig, prepare_model_for_kbit_training, get_peft_model</span><br><span class="line"><span class="keyword">from</span> transformers <span class="keyword">import</span> AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig</span><br><span class="line"><span class="keyword">from</span> transformers <span class="keyword">import</span> AutoTokenizer</span><br><span class="line"><span class="keyword">from</span> datasets <span class="keyword">import</span> load_dataset</span><br><span class="line"><span class="keyword">import</span> os </span><br><span class="line"><span class="comment"># os.environ[&quot;CUDA_VISIBLE_DEVICES&quot;]=&quot;0&quot;</span></span><br><span class="line"><span class="comment"># from modelscope.msdatasets import MsDataset</span></span><br><span class="line"><span class="comment"># ds =  MsDataset.load(&#x27;market.aliyun/LST001_CN&#x27;)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Load a tokenizer to use its chat template</span></span><br><span class="line">template_tokenizer = AutoTokenizer.from_pretrained(</span><br><span class="line">    <span class="string">&quot;TinyLlama/TinyLlama-1.1B-Chat-v1.0&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">## 数据集制作</span></span><br><span class="line">train_prompt_style = <span class="string">&quot;&quot;&quot;Below is an instruction that describes a task, paired with an input that provides further context.</span></span><br><span class="line"><span class="string">Write a response that appropriately completes the request.</span></span><br><span class="line"><span class="string">Before answering, think carefully about the question and create a step-by-step chain of thoughts to ensure a logical and accurate response.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">### Instruction:</span></span><br><span class="line"><span class="string">You are a medical expert with advanced knowledge in clinical reasoning, diagnostics, and treatment planning.</span></span><br><span class="line"><span class="string">Please answer the following medical question.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">### Question:</span></span><br><span class="line"><span class="string">&#123;&#125;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">### Response:</span></span><br><span class="line"><span class="string">&lt;reasoning&gt;</span></span><br><span class="line"><span class="string">&#123;&#125;</span></span><br><span class="line"><span class="string">&lt;/reasoning&gt;</span></span><br><span class="line"><span class="string">&lt;answer&gt;</span></span><br><span class="line"><span class="string">&#123;&#125;</span></span><br><span class="line"><span class="string">&lt;/answer&gt;&quot;&quot;&quot;</span></span><br><span class="line">EOS_TOKEN = template_tokenizer.eos_token  <span class="comment"># Must add EOS_TOKEN</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">formatting_prompts_func</span>(<span class="params">examples</span>):</span></span><br><span class="line">    inputs = examples[<span class="string">&quot;Question&quot;</span>]</span><br><span class="line">    cots = examples[<span class="string">&quot;Complex_CoT&quot;</span>]</span><br><span class="line">    outputs = examples[<span class="string">&quot;Response&quot;</span>]</span><br><span class="line">    text = train_prompt_style.<span class="built_in">format</span>(inputs, cots, outputs) + EOS_TOKEN</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">        <span class="string">&quot;text&quot;</span>: text,</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># Load and format the data using the template TinyLLama is using</span></span><br><span class="line">dataset = (</span><br><span class="line">    load_dataset(<span class="string">&quot;FreedomIntelligence/medical-o1-reasoning-SFT&quot;</span>, <span class="string">&quot;zh&quot;</span>,split=<span class="string">&quot;train&quot;</span>)</span><br><span class="line">    .shuffle(seed=<span class="number">42</span>)</span><br><span class="line">    <span class="comment"># .select(range(300_000))</span></span><br><span class="line">)</span><br><span class="line">dataset = dataset.<span class="built_in">map</span>(formatting_prompts_func)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">model_name = <span class="string">&quot;Qwen/Qwen2.5-3B-Instruct&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 4-bit quantization configuration - Q in QLoRA</span></span><br><span class="line">bnb_config = BitsAndBytesConfig(</span><br><span class="line">    load_in_4bit=<span class="literal">True</span>,  <span class="comment"># Use 4-bit precision model loading</span></span><br><span class="line">    bnb_4bit_quant_type=<span class="string">&quot;nf4&quot;</span>,  <span class="comment"># Quantization type</span></span><br><span class="line">    bnb_4bit_compute_dtype=<span class="string">&quot;float16&quot;</span>,  <span class="comment"># Compute dtype</span></span><br><span class="line">    bnb_4bit_use_double_quant=<span class="literal">True</span>,  <span class="comment"># Apply nested quantization</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Load the model to train on the GPU</span></span><br><span class="line">model = AutoModelForCausalLM.from_pretrained(</span><br><span class="line">    model_name,</span><br><span class="line">    device_map=<span class="string">&quot;auto&quot;</span>,</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Leave this out for regular SFT</span></span><br><span class="line">    quantization_config=bnb_config,</span><br><span class="line">)</span><br><span class="line">model.config.use_cache = <span class="literal">False</span></span><br><span class="line">model.config.pretraining_tp = <span class="number">1</span>  <span class="comment"># 上面这两个配置，只有在 k-bit 量化的时候需要设置</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Load LLaMA tokenizer</span></span><br><span class="line">tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=<span class="literal">True</span>)</span><br><span class="line"><span class="comment"># tokenizer.pad_token = &quot;&lt;PAD&gt;&quot;  # qwen2 的 pad token 不是 &lt;pad&gt;，所以用 &lt;im_end&gt;，因此需要注释掉</span></span><br><span class="line">tokenizer.padding_side = <span class="string">&quot;left&quot;</span>   <span class="comment"># 训练不重要，推理比较重要</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># Prepare LoRA Configuration</span></span><br><span class="line">peft_config = LoraConfig(</span><br><span class="line">    lora_alpha=<span class="number">32</span>,  <span class="comment"># LoRA Scaling</span></span><br><span class="line">    lora_dropout=<span class="number">0.1</span>,  <span class="comment"># Dropout for LoRA Layers</span></span><br><span class="line">    r=<span class="number">64</span>,  <span class="comment"># Rank，可训练数据越多，设置越大</span></span><br><span class="line">    bias=<span class="string">&quot;none&quot;</span>,</span><br><span class="line">    task_type=<span class="string">&quot;CAUSAL_LM&quot;</span>,</span><br><span class="line">    target_modules=[<span class="string">&#x27;k_proj&#x27;</span>, <span class="string">&#x27;v_proj&#x27;</span>, <span class="string">&#x27;q_proj&#x27;</span>]</span><br><span class="line">    <span class="comment"># Layers to target</span></span><br><span class="line">    <span class="comment">#  [&#x27;k_proj&#x27;, &#x27;gate_proj&#x27;, &#x27;v_proj&#x27;, &#x27;up_proj&#x27;, &#x27;q_proj&#x27;, &#x27;o_proj&#x27;, &#x27;down_proj&#x27;]</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment"># prepare model for training</span></span><br><span class="line">model = prepare_model_for_kbit_training(model)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 如果没有 prepare_model_for_kbit_training，</span></span><br><span class="line"><span class="comment"># 且 training args 中配置了 gradient_checkpointing=True （这个其实也是为了省显存，其实不重要）</span></span><br><span class="line"><span class="comment"># 那么需要设置 model.enable_input_require_grads()</span></span><br><span class="line"><span class="comment"># model.enable_input_require_grads()</span></span><br><span class="line"></span><br><span class="line">model = get_peft_model(model, peft_config)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">output_dir = <span class="string">&quot;./results&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Training arguments</span></span><br><span class="line">training_arguments = TrainingArguments(</span><br><span class="line">    output_dir=output_dir,</span><br><span class="line">    per_device_train_batch_size=<span class="number">16</span>,</span><br><span class="line">    gradient_accumulation_steps=<span class="number">4</span>,</span><br><span class="line">    optim=<span class="string">&quot;adamw_torch&quot;</span>,</span><br><span class="line">    learning_rate=<span class="number">2e-4</span>,</span><br><span class="line">    lr_scheduler_type=<span class="string">&quot;cosine&quot;</span>,</span><br><span class="line">    num_train_epochs=<span class="number">1</span>,</span><br><span class="line">    logging_steps=<span class="number">10</span>,</span><br><span class="line">    fp16=<span class="literal">True</span>,</span><br><span class="line">    gradient_checkpointing=<span class="literal">True</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># Set supervised fine-tuning parameters</span></span><br><span class="line">trainer = SFTTrainer(</span><br><span class="line">    model=model,</span><br><span class="line">    train_dataset=dataset,</span><br><span class="line">    dataset_text_field=<span class="string">&quot;text&quot;</span>,   <span class="comment"># 注意 dataset 中的 text 字段</span></span><br><span class="line">    tokenizer=tokenizer,</span><br><span class="line">    args=training_arguments,</span><br><span class="line">    max_seq_length=<span class="number">512</span>,</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Leave this out for regular SFT</span></span><br><span class="line">    peft_config=peft_config,</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Train model</span></span><br><span class="line">trainer.train()</span><br><span class="line"></span><br><span class="line"><span class="comment"># Save QLoRA weights</span></span><br><span class="line">trainer.model.save_pretrained(<span class="string">&quot;qwen2.5-3b-instruct-medical-o1-reasoning-SFT_2&quot;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">model = AutoPeftModelForCausalLM.from_pretrained(</span><br><span class="line">    <span class="string">&quot;qwen2.5-3b-instruct-medical-o1-reasoning-SFT_2&quot;</span>,</span><br><span class="line">    low_cpu_mem_usage=<span class="literal">True</span>,</span><br><span class="line">    device_map=<span class="string">&quot;auto&quot;</span>,</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Merge LoRA and base model</span></span><br><span class="line">merged_model = model.merge_and_unload()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">pipe = pipeline(task=<span class="string">&quot;text-generation&quot;</span>,</span><br><span class="line">                model=merged_model, tokenizer=tokenizer)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">## 推理测试</span></span><br><span class="line">prompt_style = <span class="string">&quot;&quot;&quot;Below is an instruction that describes a task, paired with an input that provides further context.</span></span><br><span class="line"><span class="string">Write a response that appropriately completes the request.</span></span><br><span class="line"><span class="string">Before answering, think carefully about the question and create a step-by-step chain of thoughts to ensure a logical and accurate response.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">### Instruction:</span></span><br><span class="line"><span class="string">You are a medical expert with advanced knowledge in clinical reasoning, diagnostics, and treatment planning.</span></span><br><span class="line"><span class="string">Please answer the following medical question.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">### Question:</span></span><br><span class="line"><span class="string">&#123;&#125;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">### Response:</span></span><br><span class="line"><span class="string">&lt;reasoning&gt;&#123;&#125;&quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line">question = <span class="string">&quot;患者表现为干咳，或咯少量粘痰，有时痰中带血，胸部隐痛，午后手足心热，皮肤干灼，或有盗汗，舌质红苔薄，脉细数。请问该患者的中医辨证是什么？&quot;</span></span><br><span class="line">model_inputs = tokenizer([prompt_style.<span class="built_in">format</span>(question, <span class="string">&quot;&quot;</span>)], return_tensors=<span class="string">&quot;pt&quot;</span>).to(<span class="string">&quot;cuda&quot;</span>)</span><br><span class="line"></span><br><span class="line">outputs = merged_model.generate(</span><br><span class="line">    input_ids=model_inputs.input_ids,</span><br><span class="line">    attention_mask=model_inputs.attention_mask,</span><br><span class="line">    max_new_tokens=<span class="number">2048</span>,</span><br><span class="line">    use_cache=<span class="literal">True</span>,</span><br><span class="line">)</span><br><span class="line">response = tokenizer.batch_decode(outputs)</span><br><span class="line">print(response[<span class="number">0</span>].split(<span class="string">&quot;### Response:&quot;</span>)[<span class="number">1</span>])</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_73358879/article/details/145815630">两天速成sft微调大模型（LoRA）</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/679946595">如何使用Hugging Face微调大语言模型（LLMs）</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/python12345_/article/details/146344010">如何从零训练一个LLM：尝试基于0.5B小模型复现DeepSeek-R1的思维链</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_48176053/article/details/143415442">Qwen2.5本地部署流程（Transformers）</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/15084326626">轻松上手deepseek模型微调(全过程代码+结果对比)</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/21587866352">DeepSeek-R1微调三种方法</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/BIT_666/article/details/132065177">LLM - LoRA 模型合并与保存</a></p>
+
+    
+
+    
+    <div class="page-reward">
+      <a href="javascript:void(0);" class="page-reward-btn tooltip-top" target="_self">
+        <div class="tooltip tooltip-east">
+          <span class="tooltip-item">
+            赏
+          </span>
+          <span class="tooltip-content">
+            <span class="tooltip-text">
+              <span class="tooltip-inner">
+                <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢您<i
+                    class="icon icon-quo-right"></i></p>
+                <div class="reward-box">
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/alipay.jpg">
+                    <span class="reward-type">支付宝</span>
+                  </div>
+                  
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/weixin.png">
+                    <span class="reward-type">微信</span>
+                  </div>
+                  
+                </div>
+              </span>
+            </span>
+          </span>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </a>
+    </div>
+    
+
+    
+    <div class="declare"> 
+      <ul class="post-copyright">
+        <li>
+          <strong>本文作者：</strong>
+          杨镜福
+        </li>
+        <li>
+          <strong>本文链接：</strong>
+          <a href="http://ccsoeasy.gitee.io/2025/04/08/LLM学习笔记/" title="LLM学习笔记" target="_blank">http://ccsoeasy.gitee.io/2025/04/08/LLM学习笔记/</a>
+        </li>
+        
+        <li>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，均采用 <a href="https://gitee.com/CCSoEasy/CCSoEasy/blob/master/LICENSE" rel="external nofollow" target="_blank">MIT</a> 许可协议。转载请注明出处！
+        </li>
+        
+      </ul>
+    </div>
+    
+
   </div>
-</article>
-  
+  <div class="article-info article-info-index">
     
     
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2021/02/20/%E5%AE%9E%E6%88%98%E6%90%AD%E5%BB%BA%E5%BE%AE%E6%9C%8D%E5%8A%A1/" class="archive-article-date">
-        <time datetime="2021-02-20T08:35:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-02-20</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2021/02/20/%E5%AE%9E%E6%88%98%E6%90%AD%E5%BB%BA%E5%BE%AE%E6%9C%8D%E5%8A%A1/">实战搭建微服务</a>
-	
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">JAVA</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">微服务</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2021/02/17/%E5%AE%9E%E6%88%98%E8%AE%A1%E6%93%8D/" class="archive-article-date">
-        <time datetime="2021-02-17T11:48:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-02-17</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2021/02/17/%E5%AE%9E%E6%88%98%E8%AE%A1%E6%93%8D/">计操实战</a>
-	
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
         		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2021/02/17/%E8%AE%A1%E6%93%8D%E5%BF%AB%E9%80%9F%E5%A4%8D%E4%B9%A0/" class="archive-article-date">
-        <time datetime="2021-02-17T11:12:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-02-17</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2021/02/17/%E8%AE%A1%E6%93%8D%E5%BF%AB%E9%80%9F%E5%A4%8D%E4%B9%A0/">计操快速复习</a>
-	
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
+      		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">LLM</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+    
 
+    
+
+    
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://ccsoeasy.gitee.io/2025/04/08/LLM%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+
+    
+    <div class="clearfix"></div>
+  </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2021/02/14/Docker%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" class="archive-article-date">
-        <time datetime="2021-02-14T09:44:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-02-14</time>
-</a>
 
+
+<nav id="article-nav">
+  
+  
+    <a href="/2023/03/01/A-A-A/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">A_draft</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2021/02/14/Docker%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/">Docker基本操作</a>
-	
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Docker</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%91%98%E8%A6%81"><span class="toc-number">1.</span> <span class="toc-text">摘要</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%87%86%E5%A4%87"><span class="toc-number">2.</span> <span class="toc-text">准备</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD%E6%95%B0%E6%8D%AE%E9%9B%86"><span class="toc-number">2.1.</span> <span class="toc-text">下载数据集</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BC%80%E5%A7%8B"><span class="toc-number">3.</span> <span class="toc-text">开始</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E5%BE%AE%E8%B0%83"><span class="toc-number">3.1.</span> <span class="toc-text">基本微调</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%8E%A8%E7%90%86"><span class="toc-number">3.2.</span> <span class="toc-text">基本推理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BE%AE%E8%B0%83%E6%88%90reasoning%E6%A8%A1%E5%9E%8B"><span class="toc-number">3.3.</span> <span class="toc-text">微调成reasoning模型</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%82%E8%80%83"><span class="toc-number">4.</span> <span class="toc-text">参考</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
+        
+    </div>
+</aside>
 
-    
+
+
+
+
+
+
+
+
+
+
+
 
 
           </div>
@@ -490,8 +525,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
